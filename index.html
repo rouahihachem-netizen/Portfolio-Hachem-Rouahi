@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/png" href="source/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hachem Rouahi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+<canvas id="stars"></canvas>
+    <nav class="navbar">
+    <div class="nav-logo">
+        <img src="source/logo.png" alt="Logo" class="nav-logo-img">
+        <span>Hachem <span class="text-purple">Rouahi</span></span>
+    </div>
+
+    <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#hero">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="social-links">
+        <a href="mailto:rouahihachem@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/hachem-rouahi" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/rouahihachem-netizen" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+</nav>
+    <main>
+        <section class="hero" id="hero">
+            <video autoplay muted loop class="hero-video">
+                <source src="source/blackhole.webm" type="video/webm">
+            </video>
+            <div class="hero-content">
+                <div class="badges">
+                    <span class="badge"><i class="fas fa-graduation-cap"></i> Étudiant Ingénieur @ CESI Lyon</span>
+                </div>
+                <h1>Coder les <span class="text-purple">Rêves</span> en <br><span class="text-blue">Réalité</span>, une ligne à la fois</h1>
+                <p class="hero-desc">Étudiant ingénieur en 2ème année cycle préparatoire à CESI Lyon, passionné par le développement logiciel, les systèmes embarqués et la cybersécurité. À la recherche d'un stage de 3 mois débutant en avril 2026.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView()">Me contacter</button>
+                    <a href="source/CV_Hachem_Rouahi_2026.pdf" target="_blank" class="btn-outline">Télécharger CV</a>
+                </div>
+            </div>
+            <div class="tech-orbit">
+                <img src="source/tech-grid.png" alt="Tech Stack" class="tech-grid-img">
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <video autoplay muted loop class="section-bg"><source src="source/encryption.webm" type="video/webm"></video>
+            <h2 class="section-title">À propos de <span class="text-blue">Moi</span></h2>
+            <div class="about-card">
+                <div class="profile-glow">
+                    <img src="source/WhatsApp Image 2026-03.jpeg" alt="Hachem Rouahi" class="profile-img">
+                </div>
+                <h3>Hachem Rouahi</h3>
+                <p>Passionné par le développement logiciel, la programmation, les réseaux et la cybersécurité. J'aime concevoir des solutions techniques, explorer les systèmes embarqués et relever des défis liés à la sécurité informatique. Je poursuis actuellement mon cursus d'ingénieur au <b>CESI Lyon</b>. Je suis activement à la recherche d'un <b>stage de 3 mois</b> débutant en avril 2026, ainsi qu'une <b>alternance de 3 ans</b> par la suite.</p>
+                <p class="cursive-quote">Shaping Tomorrow with Code and Creativity</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <video autoplay muted loop class="section-bg"><source src="source/cards-video.webm" type="video/webm"></video>
+            <h2 class="section-title">Mes <span class="text-blue">Skills</span></h2>
+            <p class="subtitle">Technologies et outils maîtrisés</p>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <span class="box-label">Web</span>
+                    <div class="icons">
+                        <img src="source/lamp.png" title="LAMP" style="height:45px; width:auto; object-fit:contain;">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" title="PHP">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" title="MySQL">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original.svg" title="Apache" class="white-icon">
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="box-label">Programmation</span>
+                    <div class="icons">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" title="C++">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" title="C">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" title="Python">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" title="Bash" class="white-icon">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/matlab/matlab-original.svg" title="Matlab">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/labview/labview-original.svg" title="LabView">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg" title="Arduino">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/latex/latex-original.svg" title="LaTeX">
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="box-label">Dev Tools</span>
+                    <div class="icons">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" title="Git">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" title="GitHub" class="white-icon">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" title="VSCode">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" title="Visual Studio">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/anaconda/anaconda-original.svg" title="Anaconda">
+                        <img src="source/vmware.png" title="VMware" style="height:45px; width:auto; object-fit:contain;">
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="box-label">Systèmes & Réseaux</span>
+                    <div class="icons">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/debian/debian-original.svg" title="Debian">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kalilinux/kalilinux-original.svg" title="Kali Linux">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/putty/putty-original.svg" title="PuTTY">
+                        <img src="source/HTB.png" title="Hack The Box" style="width:45px; height:45px; object-fit:contain;">
+                        <img src="source/CPT.png" title="Cisco Packet Tracer" style="width:45px; height:45px; object-fit:contain;">
+                        <img src="source/Wireshark.png" title="Wireshark" style="width:45px; height:45px; object-fit:contain;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Mes <span class="text-blue">Projets</span></h2>
+            <p class="subtitle">Une sélection de projets académiques et personnels</p>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <img src="source/proj_bdd.png" class="project-thumb" alt="BDD">
+                    <div class="project-body">
+                        <div class="project-top"><i class="fas fa-folder project-folder"></i></div>
+                        <h3>BDD — Qualité de l'Air</h3>
+                        <p>Conception d'une BDD relationnelle pour le Ministère. MCD/MLD en 3FN, requêtes SQL complexes avec jointures et agrégations.</p>
+                        <div class="project-tags"><span>#SQL</span><span>#MySQL</span><span>#MCD</span><span>#Looping</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="source/proj_signal.png" class="project-thumb" alt="Signal">
+                    <div class="project-body">
+                        <div class="project-top"><i class="fas fa-folder project-folder"></i></div>
+                        <h3>Transmission Audio Secrète</h3>
+                        <p>POC de communication cachée via ultrasons. Modulation, filtrage numérique et reconstruction du message en Python/Jupyter.</p>
+                        <div class="project-tags"><span>#Python</span><span>#Jupyter</span><span>#Signal</span><span>#FFT</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="source/proj_web.png" class="project-thumb" alt="Web">
+                    <div class="project-body">
+                        <div class="project-top"><i class="fas fa-folder project-folder"></i></div>
+                        <h3>Site Web — Recherche de Stages</h3>
+                        <p>Application web MVC PHP complète. Authentification multi-rôles, gestion des offres, candidatures avec CV/LM et wish-list.</p>
+                        <div class="project-tags"><span>#PHP</span><span>#MySQL</span><span>#MVC</span><span>#HTML/CSS</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="source/proj_meteo.png" class="project-thumb" alt="Météo">
+                    <div class="project-body">
+                        <div class="project-top"><i class="fas fa-folder project-folder"></i></div>
+                        <h3>Station Météo Embarquée</h3>
+                        <p>Système Arduino avec capteurs température, pression, hygrométrie et GPS. Sauvegarde SD, horloge RTC et LED RGB d'état.</p>
+                        <div class="project-tags"><span>#Arduino</span><span>#C</span><span>#I2C</span><span>#SPI</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="source/proj_cpp.png" class="project-thumb" alt="C++">
+                    <div class="project-body">
+                        <div class="project-top"><i class="fas fa-folder project-folder"></i></div>
+                        <h3>Automate Cellulaire — C++</h3>
+                        <p>Jeu de la Vie en C++ orienté objet avec interface graphique SFML. Diagrammes UML complets et tests unitaires.</p>
+                        <div class="project-tags"><span>#C++</span><span>#POO</span><span>#SFML</span><span>#UML</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="source/proj_strongbox.png" class="project-thumb" alt="StrongBox">
+                    <div class="project-body">
+                        <div class="project-top"><i class="fas fa-folder project-folder"></i></div>
+                        <h3>StrongBox 3000</h3>
+                        <p>Coffre-fort électronique Arduino avec circuits logiques, authentification multi-niveaux et chiffrement RSA.</p>
+                        <div class="project-tags"><span>#Arduino</span><span>#Logisim</span><span>#RSA</span><span>#C</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="source/proj_network.png" class="project-thumb" alt="Réseau">
+                    <div class="project-body">
+                        <div class="project-top"><i class="fas fa-folder project-folder"></i></div>
+                        <h3>FunkyTown — Infrastructure Réseau</h3>
+                        <p>Infrastructure réseau multi-sites sous Cisco Packet Tracer. VLANs, routage inter-VLAN, DHCP, SSH, WiFi et tunnel IPv6.</p>
+                        <div class="project-tags"><span>#Cisco</span><span>#VLAN</span><span>#PacketTracer</span><span>#IPv6</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="source/proj_homelab.png" class="project-thumb" alt="HomeLab">
+                    <div class="project-body">
+                        <div class="project-top"><i class="fas fa-folder project-folder"></i></div>
+                        <h3>HomeLab — Sécurité & Réseaux</h3>
+                        <p>Environnement virtuel multi-OS pour tests réseau et sécurité. Kali, Debian, Ubuntu et Windows pour pentesting.</p>
+                        <div class="project-tags"><span>#Kali</span><span>#VMware</span><span>#Pentest</span><span>#Wireshark</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Me <span class="text-blue">Contacter</span></h2>
+            <p class="subtitle">N'hésitez pas à me contacter pour toutes questions, opportunité de stage ou projet.</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div><b>Email</b><p>rouahihachem@gmail.com</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div><b>Téléphone</b><p>+33 7 53 23 25 16</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div><b>Localisation</b><p>Lyon, France</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div><b>LinkedIn</b><p>linkedin.com/in/hachem-rouahi</p></div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label>Nom</label>
+                        <input type="text" id="from_name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="from_email" placeholder="votre@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Sujet</label>
+                        <input type="text" id="subject" placeholder="Sujet du message" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea id="message" rows="6" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-send" id="sendBtn">
+                        <span id="btnText">Envoyer le message</span>
+                    </button>
+                    <p id="formStatus" style="display:none; margin-top:10px; text-align:center;"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <footer style="
+        border-top: 1px solid rgba(255,255,255,0.06);
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(255,255,255,0.25);
+        font-size: 0.82rem;
+        background: #030014;
+    ">
+        <span>© 2026 Hachem Rouahi. Tous droits réservés.</span>
+        <span>Disponible pour un stage d'avril à juillet 2026</span>
+    </footer>
+</body>
+</html>
