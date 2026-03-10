@@ -227,6 +227,8 @@ section { position: relative; padding: 100px 10%; min-height: 80vh; text-align: 
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+    .tech-orbit { display: none; }
+.hero { min-height: auto; padding-bottom: 60px; }
     .hamburger { display: flex; }
 .contact-form {
     width: 100%;
@@ -280,3 +282,4 @@ section { position: relative; padding: 100px 10%; min-height: 80vh; text-align: 
 @media (max-width: 900px) {
     .projects-grid { grid-template-columns: repeat(2,1fr); }
 }
+
