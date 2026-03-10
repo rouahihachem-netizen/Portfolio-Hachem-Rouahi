@@ -276,10 +276,14 @@ section { position: relative; padding: 100px 10%; min-height: 80vh; text-align: 
     .skills-grid { grid-template-columns: 1fr; }
     .about-card { padding: 25px; }
     .contact-container { flex-direction: column; gap: 40px; }
-    .projects-grid { grid-template-columns: 1fr; }
+    .projects-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .project-thumb { height: 120px; }
+    .project-body { padding: 12px; }
+    .project-body h3 { font-size: 0.85rem; }
+    .project-body p { font-size: 0.72rem; }
+    .projects-section { padding: 80px 4%; }    
 }
 
 @media (max-width: 900px) {
     .projects-grid { grid-template-columns: repeat(2,1fr); }
 }
-
